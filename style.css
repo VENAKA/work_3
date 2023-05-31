@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.header {
+    max-width: 1300px;
+    height: 100px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.header__ul {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+.header__text {
+    text-decoration: none;
+    color: #000;
+}
+.header__button {
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(105, 182, 28);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main {
+}
+.conteiner{
+    width: 500px;
+    height: 600px;
+    border: 1px solid #000;
+}
+.photo {
+}
+.music {
+}
+.conteiner__button {
+}
+.big-conteiner {
+    max-width: 1200px ;
+    height: 600px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.input__haed{
+    display: none;
+}
+.input__haed[type="checkbox"]:checked ~ .lable__head .header__button{
+    
+}
+.lable__head{
+
+}
