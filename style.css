@@ -7,22 +7,22 @@
     box-sizing: border-box;
 }
 body{
-    
+    background-image: url(./img/1inuo7vtdbmad9c1efdzgb9r-scaled.jpg.webp);
+    background-size: cover;
+    overflow: hidden;
 }
 .header {
-    max-width: 1300px;
+    max-width: 1600px;
     height: 100px;
-    border: 1px solid #000;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.333);
 }
 .logo {
     width: 60px;
     height: 60px;
-    border: 1px solid #000;
-    border-radius: 50%;
 }
 .header__ul {
     width: 500px;
@@ -30,39 +30,53 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #000;
 }
 .header__text {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
 }
+
 .header__button {
+    position: relative;
     width: 100px;
     height: 60px;
     border-radius: 30px;
-    background-color: rgb(105, 182, 28);
+    background-color: rgb(193, 197, 136);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 101;
 }
-.main {
-}
+
 .conteiner{
     width: 500px;
-    height: 600px;
-    border: 1px solid #000;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
 }
 .photo {
-}
-.music {
+    width: 300px;
+    height: 300px;
 }
 .conteiner__button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ff0000;
+    color: #b01414;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #570000;
+    cursor: pointer;
 }
 .big-conteiner {
     max-width: 1200px ;
-    height: 600px;
-    border: 1px solid #000;
+    height: 800px;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -70,9 +84,124 @@ body{
 .input__haed{
     display: none;
 }
-.input__haed[type="checkbox"]:checked ~ .lable__head .header__button{
-    
-}
 .lable__head{
+}
+.input__conteiner-1[type="checkbox"]:checked ~ .box__video {
+    display: block;
+    animation: con-1-vid alternate  2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes con-1-vid{
+    0%{
+        transform: translateX(-1000px);
+    }
+}
+.box__video{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    background-color: black;
+    top:20px;
+}
+.input__conteiner-1{
+    display: none;
+}
+.head__input[type="checkbox"]:checked ~ .full__scrin{
+    transform: translateY(0);
+}
+.head__input{
+    display: none;
+}
+.full__scrin {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.503);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateY(-2000px);
+    transition: 1s;
+}
+form{
+    width: 500px;
+    height: 600px;
+    border: 1px solid #ffffff;
+    margin: 50px auto;
+    border-radius: 30px;
+    background-color: rgba(9, 67, 35, 0.71);
+}
+.input {
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+}
+.forma {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.input__text {
+    color: #ffffff;
+}
+.input-checkbox {
+    margin-left: 10px;
+}
+.listnzia__button {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #514e4e99;
+    cursor: pointer;
+    margin: 20px;
+}
+.label__logo {
+}
+.logo__input {
+    display: none;
+}
+.logo__input[type="checkbox"]:checked ~ .lisenzia__block {
+    display: block;
+    animation: lisenzia alternate linear 1s;
+}
+@keyframes lisenzia{
+    0%{
+        transform: translateY(1000px);
+    }
+}
+.lisenzia__block{
+    color: #ffffff8a;
+    font-size: 20px;
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main__checkbox {
+    display: none;
+}
+.main__checkbox[type="checkbox"]:checked ~ .video__con{
 
+}
+.main__label {
+}
+.main__button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #045b0b;
+    border-radius: 30px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(24, 142, 24, 0.742);
+    cursor: pointer;
+}
+.video__con {
 }
