@@ -187,7 +187,25 @@ form{
     display: none;
 }
 .main__checkbox[type="checkbox"]:checked ~ .video__con{
-
+    display: block;
+    animation: video alternate linear 1s;
+}
+@keyframes video{
+    0%{
+        transform: translateY(-1000);
+    }
+}
+.video__con{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #00000072;
+    z-index: 1;
+    display: none;
+    z-index: 99;
 }
 .main__label {
 }
@@ -202,4 +220,31 @@ form{
     justify-content: space-around;
     background-color: rgba(24, 142, 24, 0.742);
     cursor: pointer;
+    z-index: 102;
+    position: absolute;
+    top: 105px;
+    right: 700px;
+    z-index: 100;
+}
+.input__conteiner-1[type="checkbox"]:checked ~ .box__video-2{
+    display: block;
+    animation: con-2-vid alternate  2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes con-2-vid{
+    0%{
+        transform: translateX(1000px);
+    }
+}
+.box__video-2{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    background-color: black;
+    top:20px;
+}
+.conteiner__tyrnir {
+    position: absolute;
+    top:160px;
+    right: 120px;
 }
